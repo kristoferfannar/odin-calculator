@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border: 2px solid black;
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    flex: 1 1 auto;
+    border: 2px solid black;   
+    margin: 30px;
+}
+
+.buttons {
+    flex: 8 1 auto;
+    border: 2px solid black;
+}
