@@ -3,24 +3,52 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(217, 255, 238);
 }
 
 .calculator {
     border: 2px solid black;
-    width: 450px;
-    height: 600px;
+    width: 40%;
+    height: 60%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    min-width: 160px;
+    min-height: 240px;
+    background-color: white;
 }
 
 .screen {
-    flex: 1 1 auto;
-    border: 2px solid black;   
-    margin: 30px;
+    border: 1px solid black;
+    min-width: 120px;
+    margin: 20px;
+    height: 80px;
 }
 
 .buttons {
-    flex: 8 1 auto;
-    border: 2px solid black;
+    flex: 1 1 auto;
+    display: flex;
+    border-top: 1px solid black;
+    flex-direction: column;
+}
+
+.row {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+button {
+    flex: 1 1 0;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+button:hover {
+    font-size: 28px;
+    font-weight: 700;
+    transition: 100ms;
+    background-color: lightblue;
 }
